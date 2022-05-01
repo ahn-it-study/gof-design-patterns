@@ -2,7 +2,6 @@ package ch16_Iterator;
 
 import ch16_Iterator.iterator.DinerMenuIterator;
 import ch16_Iterator.iterator.Iterator;
-import ch8_Composite.compositeTest.Menu;
 
 public class DinerMenu {
     static final int MAX_ITEMS = 6;
