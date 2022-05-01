@@ -1,9 +1,11 @@
-package ch16_Iterator;
+package ch16_Iterator.menu;
 
+import ch16_Iterator.MenuItem;
+import ch16_Iterator.iterator.Iterator;
 import ch16_Iterator.iterator.PancakeHouseMenuIterator;
 import java.util.ArrayList;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     ArrayList<MenuItem> menuitems;
 
     public PancakeHouseMenu() {
@@ -18,6 +20,7 @@ public class PancakeHouseMenu {
         menuitems.add(menuItem);
     }
 
+    @Override
     public PancakeHouseMenuIterator createIterator() {
         return new PancakeHouseMenuIterator(menuitems);
     }

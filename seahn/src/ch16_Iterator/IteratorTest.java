@@ -1,6 +1,8 @@
 package ch16_Iterator;
 
 import ch16_Iterator.iterator.Iterator;
+import ch16_Iterator.menu.DinerMenu;
+import ch16_Iterator.menu.PancakeHouseMenu;
 
 public class IteratorTest {
     public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class IteratorTest {
             System.out.println(menuItem.getDescription());
         }
 
-        System.out.println("DinerMenu");
+        System.out.println("\n\n\nDinerMenu");
         Iterator lunchItemsIterator = dinerMenu.createIterator();
         while (lunchItemsIterator.hasNext()) {
             MenuItem menuItem = (MenuItem) lunchItemsIterator.next();

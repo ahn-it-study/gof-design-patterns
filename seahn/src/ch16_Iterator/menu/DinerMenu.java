@@ -1,9 +1,10 @@
-package ch16_Iterator;
+package ch16_Iterator.menu;
 
+import ch16_Iterator.MenuItem;
 import ch16_Iterator.iterator.DinerMenuIterator;
 import ch16_Iterator.iterator.Iterator;
 
-public class DinerMenu {
+public class DinerMenu implements Menu{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -25,6 +26,7 @@ public class DinerMenu {
         }
     }
 
+    @Override
     public Iterator createIterator() {
         return new DinerMenuIterator(menuItems);
     }
